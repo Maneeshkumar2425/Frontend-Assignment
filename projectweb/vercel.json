@@ -2,5 +2,11 @@
     "version": 2,
     "buildCommand": "npm install && npm run build-storybook",
     "outputDirectory": "storybook-static",
-    "framework": "static"
+    "framework": "static",
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
+        }
+    ]
 }
